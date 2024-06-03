@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엡실론-델타 애니메이션</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .axis line, .axis path { stroke: #000; }
+        .line { fill: none; stroke: steelblue; stroke-width: 2px; }
+    </style>
+</head>
+<body>
+    <h1>엡실론-델타 애니메이션</h1>
+    <label for="functionInput">함수를 입력하세요 (예: 5*x - 3): </label>
+    <input type="text" id="functionInput" value="5*x - 3">
+    <br>
+    <label for="xValueInput">x가 접근하는 값 (예: 1): </label>
+    <input type="number" id="xValueInput" value="1">
+    <br>
+    <label for="limitValueInput">극한 값 (예: 2): </label>
+    <input type="number" id="limitValueInput" value="2">
+    <br>
+    <button onclick="startAnimation()">애니메이션 시작</button>
+    <svg width="800" height="600"></svg>
+    <script src="script.js"></script>
+</body>
+</html>
